@@ -4,12 +4,14 @@ import MenuButton from './MenuButton';
 import DropDownButton from './DropDownButton'
 
 class TabNavigation extends Component {
+  componentWillMount(){
+      this.state = ({
+          showDropdown: false,
+      })
+  }
 
-  createMenuItems(){
-    let menuButtonArray = [];
-
-    menuButtonArray.push(<div>asdf</div>)
-    return menuButtonArray;
+  changeDropdown() {
+    this.setState({showDropdown: !this.state.showDropdown})
   }
 
   render() {
@@ -17,7 +19,7 @@ class TabNavigation extends Component {
       <div className="aaron-tab-navigation">
           <MenuButton title="Fall Semester 2015" buttonNumber="1"/>
           <MenuButton title="Winter Semester 2016" buttonNumber="2" />
-          <DropDownButton />
+          <DropDownButton showDropdown={this.state.showDropdown} changeDropdown={this.changeDropdown.bind(this)} />
       </div>
     );
   }

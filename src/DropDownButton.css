@@ -8,6 +8,8 @@
 }
 
 .app-menu-menu{
+    width: 10em;
+    height: 10em;
     position: absolute;
     top: 100%;
     left: 0;
