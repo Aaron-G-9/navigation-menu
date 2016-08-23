@@ -1,0 +1,29 @@
+.app-menu-dropdown{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.app-menu-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14em;
+    text-align: left;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2em;
+
+    background-clip: padding-box;
+
+}

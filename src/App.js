@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import MenuButton from './MenuButton';
+import DropDownButton from './DropDownButton'
 
-class App extends Component {
+class TabNavigation extends Component {
 
   createMenuItems(){
     let menuButtonArray = [];
@@ -12,57 +14,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="aaron-menu-bar">
-          <MenuButton />
-          <MenuButton />
-          <DropdownButton />
+      <div className="aaron-tab-navigation">
+          <MenuButton title="Fall Semester 2015" buttonNumber="1"/>
+          <MenuButton title="Winter Semester 2016" buttonNumber="2" />
+          <DropDownButton />
       </div>
     );
   }
 }
 
-class MenuButton extends Component {
-
-    render(){
-        return(
-            <button className="app-menu-button">Fall Semester 2015</button>
-        )
-    }
-}
-
-class DropdownButton extends Component {
-
-    constructor(){
-        super();
-        this.displayDropdownMenu = false;
-    }
-
-    setDisplayTrue(){
-        this.displayDropdownMenu = true;
-    }
-
-    render(){
-        return(
-            <button className="app-menu-dropdown" onClick={this.setDisplayTrue.bind(this)}>
-                More Terms
-                <a title="aa;sldkfj" alt="a;sldkfj">hello</a>
-
-            </button>
-        );
-    }
-}
-
-class DropDownMenu extends Component{
 
 
-    render(){
-        return(
-          <div>
-
-          </div>
-        );
-    }
-}
 
 
-export default App;
+
+export default TabNavigation;

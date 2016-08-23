@@ -1,4 +1,4 @@
-.aaron-menu-bar{
+.aaron-tab-navigation{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -6,29 +6,10 @@
     border: solid #000;
 }
 
-.app-menu-button{
+
+.app-menu-dropdowndiv{
     height: 100%;
     width: 100%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: large;
 }
 
-.app-menu-button-selected{
-    height: 100%;
-    width: 100%;
-    background-color: lightgray;
-    border: none;
-    cursor: pointer;
-    font-size: large;
-}
 
-.app-menu-dropdown{
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: large;
-}

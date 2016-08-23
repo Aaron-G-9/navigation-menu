@@ -1,0 +1,17 @@
+.app-menu-button{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.app-menu-button-selected{
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
